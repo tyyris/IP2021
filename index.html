@@ -31,12 +31,8 @@
         <p>Click the desired filter to select images to be shown/hidden</p>
 				<aside>
           <div class="form">
-            <button onclick="myFunction()">Try it</button>
-            <button onclick="myFunction()">Try it</button>
-            <button onclick="myFunction()">Try it</button>
-            <button onclick="myFunction()">Try it</button>
-            <button onclick="myFunction()">Try it</button>
-            <button onclick="myFunction()">Try it</button>
+            <button onclick="myFunction()">RGB</button>
+            <button onclick="myFunction()">BW</button>
             </div>
 					<a class="back2Top" href="#">⮝&nbsp;Back to&nbsp;top&nbsp;⮝</a>
 				</aside>
@@ -49,7 +45,7 @@
 			<main>
 				<h2>Images</h2>
 
-        <div id="myDIV">
+        <div class="myDIV">
 
         <div class="row">
           <div class="col"><img src="img/1bw.PNG"></div>
@@ -75,6 +71,7 @@
           <div class="col"><img src="img/6bw.PNG"></div>
           <div class="col"><img src="img/6rgb.PNG"></div>
         </div>
+
       </div>
 
 			</main>
@@ -84,7 +81,7 @@
 
 <script>
 function myFunction() {
-  var x = document.getElementById("myDIV");
+  var x = document.getElementByClass("myDIV");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
