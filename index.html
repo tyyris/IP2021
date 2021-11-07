@@ -45,7 +45,7 @@ col<!doctype html>
                 <button onclick="upload()">Upload an image</button><p id="demo1"></p>
             </li>
             <li>
-              <button onclick="delete()">Delete an image</button><p id="demo2"></p>
+              <button onclick="myDelete()">Delete an image</button><p id="demo2"></p>
             </li>
           </ul>
 
@@ -121,7 +121,7 @@ function upload() {
   document.getElementById("demo1").innerHTML = txt;
 }
 
-function delete() {
+function myDelete() {
   var txt2;
   if (confirm("Press a button!")) {
     txt2 = "Image deleted";
