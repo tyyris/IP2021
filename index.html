@@ -27,9 +27,9 @@ col<!doctype html>
 	<div id="sidebar">
 		<div id="stickThis">
 			<div id="sidebarContent">
+
 				<h2>Search criteria</h2>
         <p>Click the desired filter to select images to be shown/hidden</p>
-				<aside>
           <ul>
             <li>
                 <button onclick="RGB()">RGB</button>
@@ -38,8 +38,20 @@ col<!doctype html>
               <button onclick="BW()">BW</button>
             </li>
           </ul>
-				</aside>
+
+        <h2>Database operations</h2>
+          <ul>
+            <li>
+                <button onclick="popup()">Upload an image</button>
+            </li>
+            <li>
+              <button onclick="popup()">Delete an image</button>
+            </li>
+          </ul>
+          <p id="demo"></p>
+
 			</div>
+
 		</div>
 		<div id="stick-here"></div>
 	</div>
@@ -97,6 +109,17 @@ function BW() {
     x.style.display = "none";
   }
 }
+
+function popup() {
+  var txt;
+  if (confirm("Press a button!")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+
 </script>
 
 </body>
