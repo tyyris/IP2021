@@ -42,10 +42,10 @@ col<!doctype html>
         <h2>Database operations</h2>
           <ul>
             <li>
-                <button onclick="popup()">Upload an image</button>
+                <button onclick="upload()">Upload an image</button><p id="demo1"></p>
             </li>
             <li>
-              <button onclick="popup()">Delete an image</button>
+              <button onclick="delete()">Delete an image</button><p id="demo2"></p>
             </li>
           </ul>
           <p id="demo"></p>
@@ -64,6 +64,7 @@ col<!doctype html>
           <row>
             <td>
               <div id="bw">
+                <h3>Bandwidth</h3>
                 <img src="img/1bw.PNG">
                 <img src="img/2bw.PNG">
                 <img src="img/3bw.PNG">
@@ -74,6 +75,7 @@ col<!doctype html>
             </td>
             <td>
               <div id="rgb">
+                <h3>RGB</h3>
                 <img src="img/1rgb.PNG">
                 <img src="img/2rgb.PNG">
                 <img src="img/3rgb.PNG">
@@ -110,14 +112,24 @@ function BW() {
   }
 }
 
-function popup() {
+function upload() {
   var txt;
   if (confirm("Press a button!")) {
-    txt = "You pressed OK!";
+    txt = "Image uploaded";
   } else {
-    txt = "You pressed Cancel!";
+    txt = "Image not uploaded";
   }
-  document.getElementById("demo").innerHTML = txt;
+  document.getElementById("demo1").innerHTML = txt;
+}
+
+function delete() {
+  var txt;
+  if (confirm("Press a button!")) {
+    txt = "Image deleted";
+  } else {
+    txt = "Image not deleted";
+  }
+  document.getElementById("demo2").innerHTML = txt;
 }
 
 </script>
