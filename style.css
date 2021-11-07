@@ -4,7 +4,7 @@ h1{font-size:25px}
 h2{font-size:21px;padding:10px 0px;}
 h3{font-size:18px}
 h4{font-size:16px}
-col img{max-width:500px;}
+img{max-width:500px;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 nav ul{list-style:none}
 blockquote,q{quotes:none}
