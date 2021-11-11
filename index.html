@@ -222,12 +222,7 @@ function an2() {
 
 function upload() {
   var txt;
-  if (confirm("
-  <form action='/action_page.php'>
-    <input type='file' id='myFile' name='filename'>
-    <input type='submit'>
-  </form>
-  ")) {
+  if (confirm("Select files to upload...")) {
     txt = "Image uploaded";
   } else {
     txt = "Image not uploaded";
@@ -237,7 +232,7 @@ function upload() {
 
 function myDelete() {
   var txt2;
-  if (confirm("Press a button!")) {
+  if (confirm("Select files to delete...")) {
     txt2 = "Image deleted";
   } else {
     txt2 = "Image not deleted";
