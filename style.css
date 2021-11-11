@@ -46,7 +46,7 @@ body > section{max-width:1000px;margin:auto;padding:30px 0px;border-bottom:1px s
 #headerLeft{padding:0px 20px;}
 #headerRight{}
 #sidebar{float:left;position:absolute}
-#page{padding:0px 20px}
+#page{padding:10px 20px}
 #menuToggle,#mobileMenuToggle{background:#FFF;cursor:pointer;display:inline-block;font-size:40px;width:40px;font-weight:bold;text-align:center;height:40px;line-height:40px;color:#344;border-radius:10px}
 #mobileMenuToggle,#mobileLogo{vertical-align:middle;display:none;font-size:30px}
 #menuToggle:hover{color:#FFF;background:#344}
