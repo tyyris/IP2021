@@ -7,6 +7,11 @@ h4{font-size:16px}
 img{max-width:250px;}
 button{
   width: 150px;
+  padding: 2px;
+  margin: 2px 0px;
+  border: outset;
+}
+button.menu{
   background-color: #3c5c5c;
   color: white;
   padding: 5px;
@@ -14,12 +19,7 @@ button{
   border: outset;
   border-color: #344;
 }
-button.annot{
-  width: 150px;
-  padding: 5px;
-  margin: 2px 0px;
-  border: outset;
-}
+
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 nav ul{list-style:none}
 .rgb{display:none}
