@@ -72,6 +72,7 @@ col<!doctype html>
       <hr/>
 
         <table>
+
           <tr>
             <td>
               <h4>Filename: Dim room, U - CL1, No dyes</h4>
@@ -114,6 +115,48 @@ col<!doctype html>
             </td>
           </tr>
 
+          <tr>
+            <td>
+              <h4>Filename: Dim room, U - CL2, No dyes</h4>
+              <p>
+              Show or hide type of image:
+                <button onclick="BW2()">BW</button>
+                <button onclick="RGB2()">RGB</button>
+                <button onclick="an2()">Annotations</button>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="bw2" style="float:left;">
+                <h3>Bands</h3>
+                <img src="img/2bw.PNG">
+              </div>
+
+              <div id="rgb2" style="float:left;padding-left:10px;">
+                <h3>RGB</h3>
+                <img src="img/2rgb.PNG">
+              </div>
+
+              <div id="an2" style="float:left;padding-left:10px;">
+                <div style="float:left;display:inline;">
+                <h3>Annotations</h3>
+                <img src="img/2an.PNG">
+                </div>
+                <div style="float:left;display:inline;padding-left:10px;">
+                  <h3>Show or hide annotation labels</h3>
+                  <ul style="list-style:none;">
+                    <li><button class="annot">Stroma</button></li>
+                    <li><button class="annot">Artery</button></li>
+                    <li><button class="annot">Specular reflection</button></li>
+                    <li><button class="annot">Umbilical cord</button></li>
+                  </ul>
+
+                </div>
+              </div>
+            </td>
+          </tr>
+
         </table>
 
 			</main>
@@ -143,6 +186,33 @@ function BW() {
 
 function an() {
   var x = document.getElementById("an");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function RGB2() {
+  var x = document.getElementById("rgb2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function BW2() {
+  var x = document.getElementById("bw2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function an2() {
+  var x = document.getElementById("an2");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
