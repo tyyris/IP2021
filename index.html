@@ -67,104 +67,105 @@ col<!doctype html>
         <table>
 
           <div id="artery">
-          <div style="background-color:#e2efef;padding:10px 10px;">
-            <tr>
-              <td>
+          <tr>
+            <td>
+
+              <div style="background-color:#9dc1c1;padding:10px 10px;">
                 <h4>Filename: Dim room, U - CL1, No dyes</h4>
+              </div>
 
-                <div style="display:block;padding:10px 0px;">
-                  Show or hide type of image:
+              <div style="display:block;padding:10px 0px;">
+                Show or hide type of image:
+                <ul style="list-style:none;">
+                  <li><button onclick="BW()">Bands</button></li>
+                  <li><button onclick="RGB()">RGB</button></li>
+                  <li><button onclick="an()">Annotations</button></li>
+                </ul>
+              </div>
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="bw" style="float:left;">
+                <h3>Bands</h3>
+                <img src="img/1bw.PNG">
+              </div>
+
+              <div id="rgb" style="float:left;padding-left:10px;">
+                <h3>RGB</h3>
+                <img src="img/1rgb.PNG">
+                <img src="img/wavel.jpg">
+              </div>
+
+              <div id="an" style="float:left;padding-left:10px;">
+                <div style="float:left;display:inline;">
+                <h3>Annotations</h3>
+                <img src="img/1an.PNG">
+                </div>
+                <div style="float:left;display:inline;padding-left:10px;">
+                  <h3>Show or hide annotation labels</h3>
                   <ul style="list-style:none;">
-                    <li><button onclick="BW()">Bands</button></li>
-                    <li><button onclick="RGB()">RGB</button></li>
-                    <li><button onclick="an()">Annotations</button></li>
+                    <li><button>Stroma</button></li>
+                    <li><button>Artery</button></li>
+                    <li><button>Specular reflection</button></li>
                   </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div id="bw" style="float:left;">
-                  <h3>Bands</h3>
-                  <img src="img/1bw.PNG">
-                </div>
 
-                <div id="rgb" style="float:left;padding-left:10px;">
-                  <h3>RGB</h3>
-                  <img src="img/1rgb.PNG">
-                  <img src="img/wavel.jpg">
                 </div>
-
-                <div id="an" style="float:left;padding-left:10px;">
-                  <div style="float:left;display:inline;">
-                  <h3>Annotations</h3>
-                  <img src="img/1an.PNG">
-                  </div>
-                  <div style="float:left;display:inline;padding-left:10px;">
-                    <h3>Show or hide annotation labels</h3>
-                    <ul style="list-style:none;">
-                      <li><button>Stroma</button></li>
-                      <li><button>Artery</button></li>
-                      <li><button>Specular reflection</button></li>
-                    </ul>
-
-                  </div>
-                </div>
-              </td>
-            </tr>
-            </div>
+              </div>
+            </td>
+          </tr>
 
           <div id="uc">
-            <div style="background-color:#cadfdf;padding:10px 10px;">
-              <tr>
-                <td>
-                  <h4>Filename: Dim room, U - CL2, No dyes</h4>
+          <tr>
+            <td>
 
-                  <div style="display:block;padding:10px 0px;">Show or hide type of image:
-                    <ul style="list-style:none;">
-                      <li><button onclick="BW2()">Bands</button></li>
-                      <li><button onclick="RGB2()">RGB</button></li>
-                      <li><button onclick="an2()">Annotations</button></li>
-                    </ul>
-                  </div>
+              <div style="background-color:#cadfdf;padding:10px 10px;">
+                <h4>Filename: Dim room, U - CL2, No dyes</h4>
+              </div>
 
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div id="bw2" style="float:left;">
-                    <h3>Bands</h3>
-                    <img src="img/2bw.PNG">
-                  </div>
-
-                  <div id="rgb2" style="float:left;padding-left:10px;">
-                    <h3>RGB</h3>
-                    <img src="img/2rgb.PNG">
-                    <img src="img/wavel.jpg">
-                  </div>
-
-                  <div id="an2" style="float:left;padding-left:10px;">
-
-                    <div style="float:left;display:inline;">
-                      <h3>Annotations</h3>
-                      <img src="img/2an.PNG">
-                    </div>
-
-                    <div style="float:left;display:inline;padding-left:10px;">
-                      <h3>Show or hide annotation labels</h3>
-                      <ul style="list-style:none;">
-                        <li><button>Stroma</button></li>
-                        <li><button>Artery</button></li>
-                        <li><button>Specular reflection</button></li>
-                        <li><button>Umbilical cord</button></li>
-                      </ul>
-
-                    </div>
-                  </div>
-                </td>
-              </tr>
+              <div style="display:block;padding:10px 0px;">Show or hide type of image:
+              <ul style="list-style:none;">
+                <li><button onclick="BW2()">Bands</button></li>
+                <li><button onclick="RGB2()">RGB</button></li>
+                <li><button onclick="an2()">Annotations</button></li>
+              </ul>
             </div>
-          </div> <!--uc -->
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="bw2" style="float:left;">
+                <h3>Bands</h3>
+                <img src="img/2bw.PNG">
+              </div>
+
+              <div id="rgb2" style="float:left;padding-left:10px;">
+                <h3>RGB</h3>
+                <img src="img/2rgb.PNG">
+                <img src="img/wavel.jpg">
+              </div>
+
+              <div id="an2" style="float:left;padding-left:10px;">
+                <div style="float:left;display:inline;">
+                <h3>Annotations</h3>
+                <img src="img/2an.PNG">
+                </div>
+                <div style="float:left;display:inline;padding-left:10px;">
+                  <h3>Show or hide annotation labels</h3>
+                  <ul style="list-style:none;">
+                    <li><button>Stroma</button></li>
+                    <li><button>Artery</button></li>
+                    <li><button>Specular reflection</button></li>
+                    <li><button>Umbilical cord</button></li>
+                  </ul>
+
+                </div>
+              </div>
+            </td>
+          </tr>
+        </div> <!--uc -->
 
       </div><!--artery -->
 
