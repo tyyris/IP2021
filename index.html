@@ -32,13 +32,13 @@ col<!doctype html>
         <p>Click to search images based on content</p>
           <ul>
             <li>
-              <button onclick="" class="menu">Artery</button>
+              <button onclick="artery()" class="menu">Artery</button>
             </li>
             <li>
               <button onclick="" class="menu">Dye</button>
             </li>
             <li>
-                <button onclick="" class="menu">Umbilical cord</button>
+                <button onclick="uc()" class="menu">Umbilical cord</button>
             </li>
             <li>
               <button onclick="" class="menu">Vein</button>
@@ -73,6 +73,7 @@ col<!doctype html>
 
         <table>
 
+          <div id="artery">
           <tr>
             <td>
               <h4>Filename: Dim room, U - CL1, No dyes</h4>
@@ -115,6 +116,7 @@ col<!doctype html>
             </td>
           </tr>
 
+          <div id="uc">
           <tr style="margin-top:20px;">
             <td>
               <h4>Filename: Dim room, U - CL2, No dyes</h4>
@@ -156,6 +158,9 @@ col<!doctype html>
               </div>
             </td>
           </tr>
+        </div> <!--uc -->
+
+      </div><!--artery -->
 
         </table>
 
@@ -213,6 +218,24 @@ function BW2() {
 
 function an2() {
   var x = document.getElementById("an2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function artery() {
+  var x = document.getElementById("artery");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function uc() {
+  var x = document.getElementById("uc");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
