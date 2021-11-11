@@ -222,7 +222,12 @@ function an2() {
 
 function upload() {
   var txt;
-  if (confirm("Press a button!")) {
+  if (confirm("
+  <form action='/action_page.php'>
+    <input type='file' id='myFile' name='filename'>
+    <input type='submit'>
+  </form>
+  ")) {
     txt = "Image uploaded";
   } else {
     txt = "Image not uploaded";
