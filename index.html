@@ -64,8 +64,12 @@ col<!doctype html>
 		<section id="page">
 			<main>
 
+        <div style="background-color:#9dc1c1;padding:10px 0px;">
 				<h2>Images</h2>
         <h4>Selected filters:</h4>
+      </div>
+
+      <hr/>
 
         <table>
           <tr>
@@ -77,22 +81,26 @@ col<!doctype html>
                 <button onclick="RGB()">RGB</button>
                 <button onclick="an()">Annotations</button>
               </p>
-              <p>Annotation labels: <a href="">Umbilical cord</a>, <a href="">Artery</a>, <a href="">Specular reflection</a>
+              <p>
+                Annotation labels:
+                <button>Umbilical cord</button>
+                <button>Artery</button>
+                <button>Specular reflection</button>
             </td>
           </tr>
           <tr>
             <td>
-              <div id="bw">
+              <div id="bw" style="float:left;">
                 <h3>Bands</h3>
                 <img src="img/1bw.PNG">
               </div>
 
-              <div id="rgb">
+              <div id="rgb" style="float:left;">
                 <h3>RGB</h3>
                 <img src="img/1rgb.PNG">
               </div>
 
-              <div id="an">
+              <div id="an" style="float:left;">
                 <h3>Annotations</h3>
                 <img src="img/1an.PNG">
               </div>
